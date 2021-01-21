@@ -28,8 +28,7 @@ class MainActivity : AppCompatActivity() {
 
         database = Firebase.database.reference
         database.child("Test").setValue("hi")
-        
-        //Test commit
+
         val navHostFrameLayout = supportFragmentManager
                 .findFragmentById(R.id.nav_host_fragment) as NavHostFragment
 
