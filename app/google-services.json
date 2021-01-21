@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "467086366246",
+    "project_id": "flex-workout-app-2e90f",
+    "storage_bucket": "flex-workout-app-2e90f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:467086366246:android:07489ec83d743e29f338e7",
+        "android_client_info": {
+          "package_name": "com.example.workoutapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "467086366246-5vu38h9m55kntc2oood2uo97eanvf6fj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBuohdNkHYs4raMQlkZgMqBU8ZOCwbaasg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "467086366246-5vu38h9m55kntc2oood2uo97eanvf6fj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
