@@ -17,8 +17,8 @@ class MainActivity : AppCompatActivity() {
     private lateinit var database: DatabaseReference
 
     companion object{
-        var workout = mutableListOf<String>("Ab Workout","Hypertrophy Chest Workout", "Hypertrophy Arm Workout", "HyperTrophy Leg Workout", "Body Weight Chest Workout", "Body Weight Leg Workout", "Full body workout", "Ab workout: Floor", "Ab workout: Bars")
-        var workouts = mutableMapOf<String, MutableList<Exercise>>("Test 2" to mutableListOf<Exercise>(), "Test 3" to mutableListOf<Exercise>())
+        var workout = mutableListOf<String>()
+        var workouts = mutableMapOf<String, MutableList<Exercise>>()
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -27,7 +27,6 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         database = Firebase.database.reference
-        val exercise = Exercise("Bench", 3, 3)
         database.child("Test").setValue("hi")
         
 
