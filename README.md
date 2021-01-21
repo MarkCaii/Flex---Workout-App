@@ -2,4 +2,4 @@ Flex is a mobile app that guides you through your workout. It allows users to en
 
 ![alt text](https://github.com/MarkCaii/Flex-Workout-App/blob/main/screenshots/Exercises.jpg?raw=true)
 ![alt text](https://github.com/MarkCaii/Flex-Workout-App/blob/main/screenshots/Timer.jpg?raw=true)
-![alt text](https://github.com/MarkCaii/Flex-Workout-App/blob/main/screenshots/Workout Page.jpg?raw=true)
+![alt text](https://github.com/MarkCaii/Flex-Workout-App/blob/main/screenshots/Workout%20Page.jpg?raw=true)
