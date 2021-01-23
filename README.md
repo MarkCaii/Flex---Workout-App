@@ -26,7 +26,7 @@ You will need to install Android Studio and have Java installed on your computer
 * [Firebase](https://firebase.google.com/) - Database used to store data
 
 ## Authors
-* **Mark Cai** - *Initial work* - [MarkCaii](https://github.com/MarkCaii)
+[MarkCaii](https://github.com/MarkCaii)
 
 ## Acknowledgements
 [Progress Bar](https://github.com/lopspower/CircularProgressBar) - Used this code for the progress bar
