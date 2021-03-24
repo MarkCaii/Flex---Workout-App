@@ -12,6 +12,7 @@ import androidx.appcompat.app.AlertDialog
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.workoutapp.databinding.FragmentExercisesListBinding
+import com.google.firebase.database.FirebaseDatabase
 
 class  ExercisesListFragment : Fragment() {
 
@@ -23,6 +24,7 @@ class  ExercisesListFragment : Fragment() {
     private val binding get() = _binding!!
 
     private lateinit var workoutName: String
+    private lateinit var database: FirebaseDatabase
 
     override fun onCreate(savedInstanceState: Bundle?){
         super.onCreate(savedInstanceState)
@@ -86,6 +88,8 @@ class  ExercisesListFragment : Fragment() {
                     val exerciseName = editText.text.toString()
                     val exercise = Exercise(exerciseName, sets, reps)
                     MainActivity.workouts.getValue(workoutName).add(exercise)
+                    MainActivity.saveExercise(workoutName, exercise)
+
                 }
                 dialogCancelBtn.setOnClickListener {
                     mAlertDialog?.dismiss()

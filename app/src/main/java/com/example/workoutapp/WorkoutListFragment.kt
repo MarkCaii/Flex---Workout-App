@@ -10,6 +10,9 @@ import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.workoutapp.databinding.FragmentExercisesListBinding
+import com.google.firebase.database.FirebaseDatabase
+import com.google.firebase.database.ktx.database
+import com.google.firebase.ktx.Firebase
 
 class WorkoutListFragment : Fragment() {
     private var _binding: FragmentExercisesListBinding? = null
@@ -17,7 +20,7 @@ class WorkoutListFragment : Fragment() {
     private val binding get() = _binding!!
 
     private lateinit var recyclerView: RecyclerView
-
+    private lateinit var database: FirebaseDatabase
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setHasOptionsMenu(true)
@@ -73,6 +76,7 @@ class WorkoutListFragment : Fragment() {
                         Toast.makeText(context, "Duplicate Name", Toast.LENGTH_SHORT).show()
                     }else{
                         MainActivity.workout.add(name)
+                        MainActivity.saveWorkout(name)
                         MainActivity.workouts[name] = mutableListOf<Exercise>()
                     }
                 }
